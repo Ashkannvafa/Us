@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>getting closer</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url(images/IMG_0097.PNG);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    #center-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: orchid;
+      color: white;
+      border: 2px solid white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #center-button:hover {
+      background-color: orchid;
+    }
+  </style>
+</head>
+<body>
+  <img src="images/IMG_0098.GIF"/>
+  <p style="font-weight: bolder; font-size: 40px; color: darkorchid;">You nailed it</p>
+  <button id="center-button">What's next I wonder?</button>
+
+  <script>
+    document.getElementById("center-button").addEventListener("click", () => {
+      // Change the URL to open a different page
+      window.location.href = "third.html";
+    });
+  </script>
+</body>
+</html>
